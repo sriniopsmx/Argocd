@@ -5,7 +5,8 @@ metadata:
   labels:
     app: nginx
     ssd.admissionreview.accountname: dev # Dots for representation only, pleae remove them when used
-    ssd.admissionreview.appname: cve3094 # Your app name        app: nginxspec:
+    ssd.admissionreview.appname: cve3094 # Your app name        app: nginx
+spec:
   replicas: 2
   selector:
     matchLabels:
