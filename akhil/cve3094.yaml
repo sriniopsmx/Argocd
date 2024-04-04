@@ -4,21 +4,21 @@ metadata:
   name: nginx-deployment
   labels:
     app: nginx
-    ssd.admissionreview.accountname: dev # Dots for representation only, pleae remove them when used
-    ssd.admissionreview.appname: cve3094 # Your app name        app: nginx
+    ssd.admissionreview.accountname: dev
+    ssd.admissionreview.appname: cve3094 # Your app name
 spec:
   replicas: 2
   selector:
     matchLabels:
       app: nginx
-      ssd.admissionreview.accountname: dev # Dots for representation only, pleae remove them when used
-      ssd.admissionreview.appname: cve3094 # Your app name        app: nginxspec:
+      ssd.admissionreview.accountname: dev
+      ssd.admissionreview.appname: cve3094 # Your app name
   template:
     metadata:
       labels:
         app: nginx
-        ssd.admissionreview.accountname: dev # Dots for representation only, pleae remove them when used
-        ssd.admissionreview.appname: cve3094 # Your app name        app: nginx
+        ssd.admissionreview.accountname: dev
+        ssd.admissionreview.appname: cve3094 # Your app name 
     spec:
       containers:
       - name: nginx
