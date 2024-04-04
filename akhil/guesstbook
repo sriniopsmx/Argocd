@@ -7,17 +7,14 @@ spec:
   project: default
 
   source:
-    repoURL: git@github.com:arjunopsmx/argocd-practice.git
+    repoURL: https://github.com/sriniopsmx/Argocd/ArgoCD
     targetRevision: HEAD
     path: dev
   destination: 
     server: https://kubernetes.default.svc
-    namespace: myapp
+    namespace: cve-critical
 
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
 
-    automated:
-      selfHeal: true
-      prune: true
