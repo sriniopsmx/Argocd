@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/sriniopsmx/Argocd/ArgoCD
+    repoURL: https://github.com/sriniopsmx/Argocd
     targetRevision: HEAD
     path: dev
   destination: 
